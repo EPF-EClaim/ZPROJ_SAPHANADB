@@ -1,0 +1,2 @@
+# ZPROJ_SAPHANADB
+Git repo for SAP HANA db
