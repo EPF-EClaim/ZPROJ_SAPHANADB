@@ -1,0 +1,5 @@
+column table "ZRISK" (
+    "RISK_ID" CHAR(3) unique not null COMMENT 'Risk ID',
+    "RISK_DESC" CHAR(100) COMMENT 'Risk Desc',
+    PRIMARY KEY ("RISK_ID")
+) COMMENT 'Risk'

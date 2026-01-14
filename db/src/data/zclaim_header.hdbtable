@@ -1,0 +1,14 @@
+column table "ZCLAIM_HEADER" (
+    "CLAIM_ID" CHAR(20) unique not null COMMENT 'Claim ID',
+    "CLAIM_MAIN_CAT_ID" CHAR(3) COMMENT 'Claim Main Cat ID',
+    "EMP_ID" CHAR(16) COMMENT 'Emp ID',
+    "REFERENCE_NUMBER" CHAR(100) COMMENT 'Reference Number',
+    "CLAIM_DATE" DATE COMMENT 'Claim Date',
+    "CATEGORY" CHAR(3) COMMENT 'Category',
+    "REQUEST_REFERENCE_ID" CHAR(20) COMMENT 'Request Reference ID',
+    "ALTERNATE_COST_CENTER" CHAR(6) COMMENT 'Alternate Cost Center',
+    "CLAIM_TYPE_ID" CHAR(20) COMMENT 'Claim Type ID',
+    "TOTAL" DECIMAL(16, 2) COMMENT 'Total',
+    "STATUS_ID" CHAR(3) COMMENT 'Status ID',
+    PRIMARY KEY ("CLAIM_ID")
+) COMMENT 'Claim Header'

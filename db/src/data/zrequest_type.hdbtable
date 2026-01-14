@@ -1,0 +1,5 @@
+column table "ZREQUEST_TYPE" (
+    "REQUEST_TYPE_ID" CHAR(3) unique not null COMMENT 'Request Type ID',
+    "REQUEST_TYPE_DESC" CHAR(100) COMMENT 'Request Type Desc',
+    PRIMARY KEY ("REQUEST_TYPE_ID")
+) COMMENT 'Request Type'

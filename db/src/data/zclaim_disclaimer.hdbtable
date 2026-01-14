@@ -1,0 +1,5 @@
+column table "ZCLAIM_DISCLAIMER" (
+    "CLAIM_DISCLAIMER_ID" CHAR(20) unique not null COMMENT 'Claim_Disclaimer_ID',
+    "CLAIM_DISCLAIMER_DESC" CHAR(100) COMMENT 'Claim_Disclaimer_Desc',
+    PRIMARY KEY ("CLAIM_DISCLAIMER_ID")
+) COMMENT 'Claim Disclaimer'

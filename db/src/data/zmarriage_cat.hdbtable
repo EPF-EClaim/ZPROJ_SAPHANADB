@@ -1,0 +1,5 @@
+column table "ZMARRIAGE_CAT" (
+    "MARRIAGE_CATEGORY_ID" CHAR(10) unique not null COMMENT 'Marriage_Category_ID',
+    "MARRIAGE_CATEGORY_DESC" CHAR(20) COMMENT 'Marriage_Category_Desc',
+    PRIMARY KEY ("MARRIAGE_CATEGORY_ID")
+) COMMENT 'Marriage Category'

@@ -1,0 +1,5 @@
+column table "ZSTAFF_CAT" (
+    "STAFF_CATEGORY_ID" CHAR(10) unique not null COMMENT 'Staff_Category_ID',
+    "STAFF_CATEGORY_DESC" CHAR(30) COMMENT 'Staff_Category_Desc',
+    PRIMARY KEY ("STAFF_CATEGORY_ID")
+) COMMENT 'Staff Category'

@@ -1,0 +1,5 @@
+column table "ZCLAIM_TYPE_ITEM" (
+    "CLAIM_TYPE_ITEM_ID" CHAR(20) unique not null COMMENT 'Claim Type Item ID',
+    "CLAIM_TYPE_ITEM_DESC" CHAR(100) COMMENT 'Claim Type Item Desc',
+    PRIMARY KEY ("CLAIM_TYPE_ITEM_ID")
+) COMMENT 'Claim Type Item'

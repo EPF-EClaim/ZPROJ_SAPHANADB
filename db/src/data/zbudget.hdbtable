@@ -1,0 +1,18 @@
+column table "ZBUDGET" (
+    "YEAR" DATE not null COMMENT 'IFAMS budgeting year',
+    "COMMITMENT_ITEM" CHAR(6) not null COMMENT 'IFAMS Cost Center',
+    "FUND_CENTER" INTEGER not null COMMENT 'IFAMS GL account ',
+    "MATERIAL_GROUP" INTEGER not null COMMENT 'IFAMS Material group',
+    "ORIGINAL_BUDGET" DECIMAL(16, 2) COMMENT 'IFAMS approved budget amount',
+    "VIREMENT_IN" DECIMAL(16, 2) COMMENT 'IFAMS virement in amount',
+    "VIREMENT_OUT" DECIMAL(16, 2) COMMENT 'IFAMS virement out amount',
+    "SUPPLEMENT" DECIMAL(16, 2) COMMENT 'IFAMS supplement amount',
+    "RETURN" DECIMAL(16, 2) COMMENT 'IFAMS return amount',
+    "CURR_BUDGET" DECIMAL(16, 2) COMMENT 'IFAMS current budget amount',
+    "COMMITMENT" DECIMAL(16, 2) COMMENT 'IFAMS committed amount',
+    "ACTUAL" DECIMAL(16, 2) COMMENT 'IFAMS actual budget amount',
+    "CONSUMED" DECIMAL(16, 2) COMMENT 'IFAMS consumed amount',
+    "BUDGET_BALANCE" DECIMAL(16, 2) COMMENT 'IFAMS balance budget amount',
+    "BUDGET_OWNER" CHAR(24) COMMENT 'Budget Owner',
+    PRIMARY KEY ("YEAR","COMMITMENT_ITEM","FUND_CENTER","MATERIAL_GROUP")
+) COMMENT 'Budget'

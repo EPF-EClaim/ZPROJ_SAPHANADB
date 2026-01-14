@@ -1,0 +1,5 @@
+column table "ZSTATUS" (
+    "STATUS_ID" CHAR(3) unique not null COMMENT 'Status ID',
+    "STATUS_DESC" CHAR(100) COMMENT 'Status Desc',
+    PRIMARY KEY ("STATUS_ID")
+) COMMENT 'Status'

@@ -1,0 +1,5 @@
+column table "ZCLAIM_CATEGORY" (
+    "CLAIM_CAT_ID" CHAR(3) unique not null COMMENT 'Claim Cat ID',
+    "CLAIM_CATEGORY_DESC" CHAR(100) COMMENT 'Claim Category Desc',
+    PRIMARY KEY ("CLAIM_CAT_ID")
+) COMMENT 'Claim Category'

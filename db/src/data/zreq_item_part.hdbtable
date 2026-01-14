@@ -1,0 +1,9 @@
+column table "ZREQ_ITEM_PART" (
+    "REQUEST_ID" CHAR(20) not null COMMENT 'Request ID',
+    "CLAIM_TYPE_ITEM_ID" CHAR(20) not null COMMENT 'Claim Type Item ID',
+    "PARTICIPANTS_ID" CHAR(3) not null COMMENT 'Participants ID',
+    "PARTICIPANTS" CHAR(50) COMMENT 'Participants',
+    "EMPLOYEE_COST_CENTER" CHAR(6) COMMENT 'Employee Cost Center',
+    "ALLOCATED_AMOUNT" DECIMAL(16, 2) COMMENT 'Allocated Amount',
+    PRIMARY KEY ("REQUEST_ID","CLAIM_TYPE_ITEM_ID","PARTICIPANTS_ID")
+) COMMENT 'Request Item Part'

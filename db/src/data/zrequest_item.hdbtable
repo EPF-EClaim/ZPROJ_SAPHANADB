@@ -1,0 +1,8 @@
+column table "ZREQUEST_ITEM" (
+    "REQUEST_ID" CHAR(20) not null COMMENT 'Request ID',
+    "CLAIM_TYPE_ITEM_ID" CHAR(20) COMMENT 'Claim Type Item ID',
+    "AMOUNT" DECIMAL(16, 2) COMMENT 'Amount',
+    "TYPE_OF_TRANSPORTATION" CHAR(100) COMMENT 'Type of Transportation',
+    "ATTACHMENT" CHAR(100) COMMENT 'Attachment',
+    PRIMARY KEY ("REQUEST_ID","CLAIM_TYPE_ITEM_ID")
+) COMMENT 'Request Item'

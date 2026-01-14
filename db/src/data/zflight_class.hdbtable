@@ -1,0 +1,5 @@
+column table "ZFLIGHT_CLASS" (
+    "FLIGHT_CLASS_ID" CHAR(2) unique not null COMMENT 'Flight_Class ID',
+    "FLIGHT_CLASS_DESC" CHAR(30) COMMENT 'Flight_Class_Desc',
+    PRIMARY KEY ("FLIGHT_CLASS_ID")
+) COMMENT 'Flight Class'

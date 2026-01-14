@@ -1,0 +1,5 @@
+column table "ZAREA" (
+    "AREA_ID" CHAR(6) unique not null COMMENT 'Area_ID',
+    "AREA_DESC" CHAR(100) COMMENT 'Area_Desc',
+    PRIMARY KEY ("AREA_ID")
+) COMMENT 'Area'

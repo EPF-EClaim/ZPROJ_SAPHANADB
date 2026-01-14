@@ -1,0 +1,13 @@
+column table "ZREQUEST_HEADER" (
+    "REQUEST_ID" CHAR(20) unique not null COMMENT 'Request ID',
+    "REQUEST_TYPE_ID" CHAR(3) COMMENT 'Request Type ID',
+    "EMP_ID" CHAR(16) COMMENT 'Emp ID',
+    "REFERENCE_NUMBER" CHAR(100) COMMENT 'Reference Number',
+    "OBJECTIVE_PURPOSE" CHAR(100) COMMENT 'Objective/Purpose',
+    "START_DATE" DATE COMMENT 'Start Date',
+    "END_DATE" DATE COMMENT 'End Date',
+    "REMARK" CHAR(100) COMMENT 'Remark',
+    "CLAIM_TYPE_ID" CHAR(20) COMMENT 'Claim Type ID',
+    "REQUEST_GROUP_ID" CHAR(100) COMMENT 'Request Group ID',
+    PRIMARY KEY ("REQUEST_ID")
+) COMMENT 'Request Header'

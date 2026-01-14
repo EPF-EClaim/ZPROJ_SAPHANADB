@@ -1,0 +1,5 @@
+column table "ZCOUNTRY" (
+    "COUNTRY_ID" CHAR(3) unique not null COMMENT 'Country_ID',
+    "COUNTRY_DESC" CHAR(10) COMMENT 'Country_Desc',
+    PRIMARY KEY ("COUNTRY_ID")
+) COMMENT 'Country'

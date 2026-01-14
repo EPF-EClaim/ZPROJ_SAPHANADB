@@ -1,0 +1,5 @@
+column table "ZARITH_OPT" (
+    "OPERATOR_ID" CHAR(2) unique not null COMMENT 'Operator ID',
+    "OPERATOR_DESC" CHAR(100) COMMENT 'Operator Desc',
+    PRIMARY KEY ("OPERATOR_ID")
+) COMMENT 'Arithmetic Operator'

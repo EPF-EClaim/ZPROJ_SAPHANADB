@@ -1,0 +1,7 @@
+column table "ZNUM_RANGE" (
+    "RANGE_ID" CHAR(2) unique not null COMMENT 'Range ID',
+    "FROM" CHAR(10) COMMENT 'From',
+    "TO" CHAR(10) COMMENT 'To',
+    "CURRENT" CHAR(10) COMMENT 'Current',
+    PRIMARY KEY ("RANGE_ID")
+) COMMENT 'Number Range'

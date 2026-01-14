@@ -1,0 +1,19 @@
+column table "ZEMP_MASTER" (
+    "EEID" CHAR(16) unique not null COMMENT 'SuccessFactors Employee ID',
+    "NAME" CHAR(255) COMMENT 'SuccessFactors Employee full name',
+    "GRADE" CHAR(5) COMMENT 'SuccessFactors Employee Personal Grade',
+    "CC" INTEGER COMMENT 'SuccessFactors Employee Cost Center',
+    "POS" CHAR(16) COMMENT 'SuccessFactors Employee Position',
+    "DEP" CHAR(16) COMMENT 'SuccessFactors Employee Department',
+    "JOB_CODE" CHAR(16) COMMENT 'Employee Job Code to determine the job pos',
+    "LOC" CHAR(255) COMMENT 'SuccessFactors Employee Location',
+    "MGR" CHAR(16) COMMENT 'SuccessFactors Employees’ Superior ID',
+    "CXO" CHAR(16) COMMENT 'SuccessFactors Employees’ CxO',
+    "DOT" CHAR(16) COMMENT 'Assigned Approver',
+    "TYPE_E" BOOLEAN COMMENT 'Persona',
+    "TYPE_A" BOOLEAN COMMENT 'Persona',
+    "TYPE_AD" BOOLEAN COMMENT 'Persona',
+    "B_PLACE" CHAR(255) COMMENT 'Birth Origin',
+    "MARITAL" CHAR(16) COMMENT 'Marital Status',
+    PRIMARY KEY ("EEID")
+) COMMENT 'Employee Master'

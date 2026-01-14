@@ -1,0 +1,8 @@
+column table "ZCLAIM_TYPE_INFO" (
+    "CLAIM_TYPE_ID" CHAR(20) not null COMMENT 'Claim Type ID',
+    "CLAIM_TYPE_ITEM_ID" CHAR(20) not null COMMENT 'Claim Type Item ID',
+    "RISK_ID" CHAR(3) COMMENT 'Risk ID',
+    "TAXABLE" BOOLEAN COMMENT 'Taxable',
+    "REQUIREMENT" CHAR(100) COMMENT 'Requirement',
+    PRIMARY KEY ("CLAIM_TYPE_ID","CLAIM_TYPE_ITEM_ID")
+) COMMENT 'Claim Type Info'

@@ -1,0 +1,13 @@
+column table "ZAPPROVAL_RULES" (
+    "ZSCENARIO" CHAR(20) not null COMMENT 'Claim Type',
+    "ZSEQNO" CHAR(1) not null COMMENT 'Sequence Number',
+    "ZAPPR_LVL" CHAR(1) not null COMMENT 'Approval Level',
+    "ZAMT" DECIMAL(16, 2) COMMENT 'Amount',
+    "ZAMT_OP" CHAR(2) COMMENT 'Amount (Operator)',
+    "ZDAYS" INTEGER COMMENT 'Days',
+    "ZDAYS_OP" CHAR(2) COMMENT 'Days (Operator)',
+    "ZCOSTCTR" CHAR(16) COMMENT 'Cost Center',
+    "ZCOSTCTR_OP" CHAR(2) COMMENT 'Cost Center (Operator)',
+    "ZAPPROVER_ID" CHAR(16) COMMENT 'Approver ID',
+    PRIMARY KEY ("ZSCENARIO","ZSEQNO","ZAPPR_LVL")
+) COMMENT 'Approval Rules'
