@@ -1,0 +1,8 @@
+COLUMN TABLE "ZREQ_COST_CENTER"(
+    "COST_CENTER_ID" CHAR(10) unique NOT NULL COMMENT 'Cost Center ID',
+    "COST_CENTER_DESC" CHAR(40) COMMENT 'Cost Center Description',
+    "START_DATE" DATE COMMENT 'Start Date',
+    "END_DATE" DATE COMMENT 'End Date',
+    "STATUS" CHAR(1) COMMENT 'Status',
+    PRIMARY KEY ("COST_CENTER_ID")
+) COMMENT 'Request Cost Center'

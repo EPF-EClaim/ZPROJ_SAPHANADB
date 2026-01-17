@@ -8,6 +8,8 @@ column table "ZAPPROVAL_RULES" (
     "ZDAYS_OP" CHAR(2) COMMENT 'Days (Operator)',
     "ZCOSTCTR" CHAR(16) COMMENT 'Cost Center',
     "ZCOSTCTR_OP" CHAR(2) COMMENT 'Cost Center (Operator)',
+    "ZRISK" CHAR(100) COMMENT 'Risk',
+    "ZRISK_OP" CHAR(4) COMMENT 'Risk (Operator)',
     "ZAPPROVER_ID" CHAR(16) COMMENT 'Approver ID',
     PRIMARY KEY ("ZSCENARIO","ZSEQNO","ZAPPR_LVL")
 ) COMMENT 'Approval Rules'

@@ -1,1 +1,7 @@
 mta_archives/
+default-env.json
+
+# auto generated wildcard
+db/.env
+# auto generated wildcard
+.env
