@@ -1,5 +1,8 @@
 column table "ZREQUEST_GRP" (
     "REQUEST_GROUP_ID" CHAR(3) unique not null COMMENT 'Request Group ID',
     "REQUEST_GROUP_DESC" CHAR(100) COMMENT 'Request Group Desc',
+    "START_DATE" DATE COMMENT 'Start Date',
+    "END_DATE" DATE COMMENT 'End Date',
+    "STATUS" CHAR(1) COMMENT 'Status',
     PRIMARY KEY ("REQUEST_GROUP_ID")
 ) COMMENT 'Request Group'

@@ -1,8 +1,13 @@
 column table "ZCLAIM_TYPE_INFO" (
     "CLAIM_TYPE_ID" CHAR(20) not null COMMENT 'Claim Type ID',
     "CLAIM_TYPE_ITEM_ID" CHAR(20) not null COMMENT 'Claim Type Item ID',
+    "START_DATE" DATE COMMENT 'Start Date',
+    "END_DATE" DATE COMMENT 'End Date',
+    "STATUS" CHAR(1) COMMENT 'Status',
+    "TYPE" CHAR(20) COMMENT 'Type',
     "RISK_ID" CHAR(3) COMMENT 'Risk ID',
+    "GL_ACCOUNT" CHAR(6) COMMENT 'GL Account',
+    "CATEGORY" CHAR(16) COMMENT 'Category',
     "TAXABLE" BOOLEAN COMMENT 'Taxable',
-    "REQUIREMENT" CHAR(100) COMMENT 'Requirement',
     PRIMARY KEY ("CLAIM_TYPE_ID","CLAIM_TYPE_ITEM_ID")
 ) COMMENT 'Claim Type Info'

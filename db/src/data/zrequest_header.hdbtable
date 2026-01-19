@@ -6,8 +6,13 @@ column table "ZREQUEST_HEADER" (
     "OBJECTIVE_PURPOSE" CHAR(100) COMMENT 'Objective/Purpose',
     "START_DATE" DATE COMMENT 'Start Date',
     "END_DATE" DATE COMMENT 'End Date',
-    "REMARK" CHAR(100) COMMENT 'Remark',
+    "LOCATION" CHAR(100) COMMENT 'Location',
     "CLAIM_TYPE_ID" CHAR(20) COMMENT 'Claim Type ID',
+    "TYPE_OF_TRANSPORTATION" CHAR(100) COMMENT 'Type of Transportation',
+    "AMOUNT" DECIMAL(16, 2) COMMENT 'Amount', 
     "REQUEST_GROUP_ID" CHAR(100) COMMENT 'Request Group ID',
+    "ALTERNATE_COST_CENTRE" CHAR(6) COMMENT 'Alternate Cost Center',
+    "REMARK" CHAR(100) COMMENT 'Remark',
+    "ATTACHMENT" CHAR(100) COMMENT 'Attachment',
     PRIMARY KEY ("REQUEST_ID")
 ) COMMENT 'Request Header'
