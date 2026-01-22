@@ -1,5 +1,5 @@
-column table "ZROOM_TYPE" (
-    "ROOM_TYPE_ID" CHAR(2) unique not null COMMENT 'Room_Type_ID',
-    "ROOM_TYPE_DESC" CHAR(30) COMMENT 'Room_Type_Desc',
-    PRIMARY KEY ("ROOM_TYPE_ID")
+COLUMN TABLE "ZROOM_TYPE" (
+  "ROOM_TYPE_ID" CHAR(5) UNIQUE NOT NULL COMMENT 'Room Type ID',
+  "ROOM_TYPE_DESC" CHAR(30) COMMENT 'Room Type Desc',
+  PRIMARY KEY ("ROOM_TYPE_ID")
 ) COMMENT 'Room Type'

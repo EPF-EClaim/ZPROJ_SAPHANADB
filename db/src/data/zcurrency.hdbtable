@@ -1,5 +1,5 @@
 column table "ZCURRENCY" (
-    "CURRENCY_ID" CHAR(10) unique not null COMMENT 'Currency ID',
-    "CURRENCY_DESC" CHAR(10) COMMENT 'Currency_Desc',
+    "CURRENCY_ID" CHAR(3) unique not null COMMENT 'Currency ID',
+    "CURRENCY_DESC" CHAR(30) COMMENT 'Currency Desc',
     PRIMARY KEY ("CURRENCY_ID")
 ) COMMENT 'Currency'
